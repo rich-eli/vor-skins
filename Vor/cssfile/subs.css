@@ -1,0 +1,154 @@
+.subscribe{
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+body{
+    background-image: url(../photo/vorskindayandnight.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* img{
+    margin: 2%;
+    width: 60px;
+    transition: all ease 0.3s;
+    position: absolute;
+    animation: zoom 10s ease-in-out infinite;
+} */
+
+.container-sub{
+    margin: 5%;
+    width: 35%;
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid black;
+    box-shadow: 10px 10px 20px white;
+}
+.subs-head{
+    padding: 5% 8%;
+}
+.subs-head h1{
+    color: red;
+    margin-top:5%;
+    font-size: 3rem;
+}
+.subs-head p{
+    font-size: 1.2rem;
+}
+.form{
+    padding: 5% 8%;
+}
+
+.form-cond{
+    position: relative;
+    margin-bottom: 4%;
+    padding-bottom: 10%;
+}
+
+.form-cond label{
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+.form-cond input{
+    padding: 10px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: block;
+    font-size: 0.8rem;
+}
+
+
+.form-cond select{
+    padding: 10px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: block;
+    font-size: 0.8rem;
+}
+.form-cond input:focus{
+    border:2px solid grey;
+}
+.form-cond i{
+    margin: 1%;
+    cursor: pointer;
+    position: absolute;
+}
+.fa-eye{
+    color: grey;
+}
+.form-cond p{
+    font-size: 1rem;
+    margin: 1% 8%;
+}
+.form-cond small{
+    visibility: hidden;
+    position: absolute;
+    /* bottom: 0; */
+    /* left: 0; */
+}
+
+.form .sub-btn{
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 4%;
+    font-size: 1rem;
+    margin: 4% 0;
+}
+
+.sub-btn:hover{
+    box-shadow: 3px 3px 6px red;
+    border: 2px solid red;
+    color: red;
+}
+
+.form-cond.success input{
+    border-color: rgb(0, 193, 0);
+}
+
+.form-cond.error input{
+    border-color: red;
+}
+.form-cond.success select{
+    border-color: rgb(0, 193, 0);
+}
+.form-cond.error select{
+    border-color: red;
+}
+.form-cond.error small{
+    color: red;
+    visibility: visible;
+}
+
+#check input{
+    width: 15px;
+    position: absolute;
+}
+
+.form-cond h5{
+    margin-left: 5%;
+}
+
+
+@media(max-width:850px){
+    .container-sub{
+        margin: 20% 0;
+        width: 80%;
+    }
+    .form-cond p{
+        margin-left: 10%;
+    }
+}

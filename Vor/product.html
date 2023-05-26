@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORskin - Shop</title>
+    <link rel="stylesheet" href="cssfile/style.css">
+    <link rel="stylesheet" href="cssfile/prod.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/fdc795101e.js" crossorigin="anonymous"></script>
+    <script src="jsfile/script.js" defer></script>
+</head>
+<body>
+    <section class = "header">
+        <div class="nav-bar">
+            <div id = "logo-vor">
+                <a href="home.html"><h1>VORskin</h1></a>
+            </div>
+        </div>
+        <nav class = "under-head" id="underhead">
+            <ul>
+                <li><a href="home.html" class="menu">Home</a></li>
+                <li><a href="aboutus.html" class="menu">About</a></li>
+                <li class="disini"><a href="product.html" class="menu  active">Product</a></li>
+                <li><a href="promotion.html" class="menu">Promotion</a></li>
+                <li><a href="subs.html" class="menu">Subscribe</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="buat-phone" onclick="showMenu()"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </section>
+    <section class="background">
+        <div class="nav-bar">
+            <div id = "logo-vor">
+                <a href="home.html"><h1>VORskin</h1></a>
+            </div>
+        </div>
+        <nav class = "under-head" id="underhead">
+            <ul>
+                <li class="disini"><a href="home.html" class="menu active">Home</a></li>
+                <li><a href="aboutus.html" class="menu">About</a></li>
+                <li><a href="product.html" class="menu">Product</a></li>
+                <li><a href="promotion.html" class="menu">Promotion</a></li>
+                <li><a href="subs.html" class="menu">Subscribe</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="buat-phone"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </section>
+    <h2 id="prod-header">Shop Our Products</h2>
+    <section class="product-box">
+        <div class="container-btn" id="container-btn">
+            <button class="btn ada" onclick="filterProduct('all')">All Product</button>
+            <button class="btn" onclick="filterProduct('skin')">VORskin's Skin Care</button>
+            <button class="btn" onclick="filterProduct('body')">VORskin's Body Care</button>
+            <button class="btn" onclick="filterProduct('line')">VORskin's Lines</button>
+            <button class="btn" onclick="filterProduct('kit')">VORskin's Kit</button>
+            <button class="btn" id="vorcolab"onclick="filterProduct('colab')">VORskin's X ITZY Yeji</button>
+            
+        </div>
+        <div class="container-filter">
+            <div class="filter-box">
+                <div class="filter colab body">
+                    <img src="photo/vglowessence.png" alt="" class="prod-img" id="vges">
+                    <h5>NEW</h5>
+                    <h3>Yeji's VGLOW Essence</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half"></i></i></li>
+                        <li>(234)</li>
+                    </ul>
+                    <p>with 50% VGLOW Enhanced for you</p>
+                    <a href="#" class="addto">Add to Cart - Rp. 79.999</a>
+                </div>
+                <div class="filter colab skin">
+                    <img src="photo/vglowserum.png" alt="" class="prod-img" id="vgse">
+                    <h5>NEW</h5>
+                    <h3>Yeji's VGLOW Serum</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li>(311)</li>
+                    </ul>
+                    <p>with 40% VGLOW Serum for you</p>
+                    <a href="#" class="addto">Add to Cart - Rp. 99.999</a>
+                </div>
+                <div class="filter colab kit skin body">
+                    <img src="photo/yejikit.jpg" alt="" class="prod-img" id="vgkit">
+                    <h5>NEW</h5>
+                    <h3>Yeji's Kit</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half"></i></i></li>
+                        <li>(397)</li>
+                    </ul>
+                    <p>Combine Yeji's Serum & Yeji's Essence</p>
+                    <a href="#" class="addto">Add to Cart - Rp. 149.999</a>
+                </div>
+                <div class="filter line skin">
+                    <img src="photo/vorskinsserum.png" alt="" class="prod-img" id="vorse">
+                    <h5>Best Seller</h5>
+                    <h3>VORskin's anti-aging Serum</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half"></i></i></li>
+                        <li>(1945)</li>
+                    </ul>
+                    <p>Anti-aging serum with vegan ingredients</p>
+                    <a href="#" class="addto">Add to Cart - Rp 59.000</a>
+                </div>
+                <div class="filter line body">
+                    <img src="photo/vorskinessence.png" alt="" class="prod-img" id="vores">
+                    <h5>Best Seller</h5>
+                    <h3>VORskin's essence</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li>(2022)</li>
+                    </ul>
+                    <p>The pinacle of VGLOW Essence</p>
+                    <a href="#" class="addto">Add to Cart - Rp 119.000</a>
+                </div>
+                <div class="filter line body"  id="creamcare">
+                    <img src="photo/vorskincreamcare.jpg" alt="" class="prod-img">
+                    <h3>VORskin's Creamcare</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li>(2003)</li>
+                    </ul>
+                    <p>For your night use</p>
+                    <a href="#" class="addto">Add to Cart - Rp. 39.000</a>
+                </div>
+                <div class="filter line skin">
+                    <img src="photo/vorskinfacialmask.png" alt="" class="prod-img" id="vormas">
+                    <h5>Best Seller</h5>
+                    <h3>VORskin's Facial Mask</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li>(1763)</li>
+                    </ul>
+                    <p>99% VGLOW Formula and 1% of VORskin's secret lotion</p>
+                    <a href="#" class="addto">Add to Cart - Rp 29.000</a>
+                </div>
+                <div class="filter kit skin body">
+                    <img src="photo/vorskindailykit.png" alt="" class="prod-img" id="vorkit">
+                    <h5>Best Seller</h5>
+                    <h3>VORskin's Daily Kit</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li>(2564)</li>
+                    </ul>
+                    <p>Combine the serum & essence for daily use</p>
+                    <a href="#" class="addto">Add to Cart - Rp 199.999</a>
+                </div>
+                <div class="filter kit skin body">
+                    <img src="photo/vorskinweeklykit.png" alt="" class="prod-img">
+                    <h3>VORskin's To the Go Kit</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li>(1088)</li>
+                    </ul>
+                    <p>Combine the VORskin's to the go use</p>
+                    <a href="#" class="addto">Add to Cart - Rp 249.999</a>
+                </div>
+                <div class="filter kit skin body">
+                    <img src="photo/vorskindayandnight.png" alt="" class="prod-img">
+                    <h3>VORskin's Day and Night Kit</h3>
+                    <ul class="review">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star-half"></i></i></li>
+                        <li>(998)</li>
+                    </ul>
+                    <p>Combine VORskin's essential for your day and night use</p>
+                    <a href="#" class="addto">Add to Cart - Rp 299.000</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="">
+        <div class = "kakier">
+            <div class="footer-icon">
+                <a href="https://www.facebook.com/" id="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/home" id="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" id="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" id="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class = "footer-menu">
+                <div id="footer-logo">
+                    <h2><a href="home.html">VORskin</a></h2>
+                    <p>All rights reserved</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Product</h3>
+                    <ul>
+                    <li><a href="product.html">Shop All</a></li>
+                    <li><a href="home.html#gobs">Best Seller</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
+                </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>VORskin</h3>
+                    <ul>
+                    <li><a href="aboutus.html">About VORskin</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="jsfile/filterprod.js"></script>
+</body>
+</html>

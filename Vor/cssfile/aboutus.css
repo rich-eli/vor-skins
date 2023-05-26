@@ -1,0 +1,140 @@
+.about-us{
+    width: 100%;
+    padding: 10%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-us h2{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.about-us.history{
+    background-image: linear-gradient(rgb(254, 60, 60),white);
+}
+.about-us.vor{
+    color: black;
+    background-image: linear-gradient(white,rgb(254, 60, 60));
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.about-vor h2{
+    font-size: 2.4rem;
+    width: 50%;
+    text-align: center;
+    margin: 5%;
+}
+
+.about-vor-box{
+    font-size: 1.6rem;
+    width: 50%;
+}
+
+.about-vor-box p {
+    margin: 1%;
+}
+.history-box{
+    margin: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    
+}
+
+.history-box h4{
+    font-size: 1.7rem;
+    text-align: left;
+    color: white;
+
+}
+.history-box h3{
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 3%;
+}
+.history-box p{
+    font-size: 1.4rem;
+}
+.about-founder{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-founder h2{
+    font-size: 3.6rem;
+}
+.founder-box{
+    display: flex;
+    flex-direction: row;
+}
+.founder{
+    width: 100%;
+    padding: 5%;
+    margin: 2% 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px gray;
+    transition: all ease 0.5s;
+    text-align: center;
+}
+
+.founder:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+    text-decoration:underline;
+}
+.founder img{
+    width: 40%;
+}
+.founder h2{
+    font-size: 2.4rem;
+}
+.founder p{
+    color:gray;
+    font-size: 1.6rem;
+}
+
+@media(max-width: 800px){
+    .about-us{
+        display: block;
+        padding: 8% 0;
+    }
+    .about-vor-box{
+        margin: 10% 0;
+        width: 100%;
+        padding: 0 3%;
+    }
+    .about-founder{
+        display: inline-block;
+    }
+    .founder-box{
+        display: inline-block;
+        width: 100%;
+    }
+    .founder{
+        margin: 3% 0;
+    }
+    .history-box{
+        width: 100%;
+        margin: 10% 0;
+        padding: 0 3%;
+    }
+    .about h2{
+        font-size: 2.4rem;
+    }
+    .about p{
+        font-size: 1.2rem;
+    }
+}

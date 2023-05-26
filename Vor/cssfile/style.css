@@ -1,0 +1,591 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: red;
+    border: 1px solid white;
+}
+
+::-webkit-scrollbar-track{
+    background: white
+}
+
+body{
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+#cart-icon{
+    color: black;
+    padding-top: 5px;
+    padding-right: 10px;
+    justify-content: center;
+    align-self: center; 
+    text-decoration: none;
+}
+
+#cart-icon:hover{
+    color: red;
+}
+
+.header{
+    z-index:1000;
+    position: fixed;
+    font-family:sans-serif;
+    width:100%;
+}
+.background{
+    min-height:fit-content;
+}
+#logo-vor{
+    margin: 1%;
+    font-size: 2.4rem;
+    font-family: 'Helvetica Neue';
+    color: red;
+    align-items: center;
+    text-align: center;
+}
+#logo-vor a{
+    text-decoration: none;
+    color: red;
+    transition: 0.3s;
+}
+
+#logo-vor a:hover{
+    color: black;
+}
+
+.nav-bar{
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buat-phone{
+    font-size: 2rem;
+    display: none;
+    text-decoration: none;
+    color: black;
+}
+.buat-phone:hover{
+    color: white;
+}
+/* 
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li{
+    font-size: small;
+    padding: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover{
+    color: red;
+
+} */
+
+/* search */
+.search-bar{
+    align-items: center;
+    justify-content:end;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* input[type = text]{
+    background-color: white;
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+    border-color: red;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+} */
+
+/* input[type=text]:focus {
+    background-color: white;
+} */
+
+
+/* header bawa */
+.under-head{
+    width: 100%;
+    padding: 1%;
+    background-color: red;
+    text-align: center;
+    overflow: hidden;
+}
+
+.under-head ul li{
+    padding: 0 2%;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.under-head ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.under-head ul li a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.under-head a.active{
+    color: black;
+    font-weight: 600;
+}
+.menu{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.menu:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+.menu:hover::before{
+    width: 110%;
+}
+
+/* yeji x vorskin */
+
+/* welcome */
+.welcome{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../photo/yejixvor.png);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.welcome-text{
+    display: block;
+    padding-bottom: 15%;
+}
+.welcome-text h1{
+    text-align: center;
+    color: red;
+    font-size: 3.6rem;
+}
+
+.welcome-text p{
+    color: red;
+    text-align: center;
+    font-size: 2rem;
+}
+/* collab */
+.yeji-vor{
+    min-height: 60vh;
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    background-image: linear-gradient(red,white);
+    /* background-color: rgba(255, 38, 38, 0.89); */
+}
+.yeji-vor h2{
+    font-size:3.6rem;
+    color: white;
+    margin-bottom: 1%;
+}
+
+.yeji-vor h3{
+    font-size: 2rem;
+    color: white;
+    margin-bottom:5%;
+}
+.button{
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    padding: 2% 3%;
+    transition: all ease 0.3s;
+}
+.button:hover{
+    /* border: 1px solid black; */
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 10px white;
+}
+/* new arrival */
+.kotak-hitam{
+    width: 30%;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 5%;
+}
+.kotak-hitam h3{
+    font-size: 2rem;
+    color:black;
+}
+.kotak-hitam img{
+    width: 100%;
+}
+.kotak-hitam:hover{
+    color: red;
+    box-shadow: 8px 8px black;
+}
+.kotak-hitam:hover img{
+    animation: anima 10s ease-out infinite;
+    transition: all ease-in-out 0.5s;
+}
+.kotak-hitam:hover h3{
+    color: red;
+}
+/* best seller */
+.best-seller{
+    min-height: 130vh;
+    width: 100%;
+    padding: 10% 0;
+    text-align: center;
+}
+
+.best-seller h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.best-seller p{
+    font-size: 2rem;
+}
+
+.for-best{
+    width: 100%;
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.kotak-best{
+    width: 25%;
+    border: 1px solid red;
+    justify-content: center;
+    padding: 2% 2%;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 0 1%;
+}
+.button.bestbtn{
+    color: white;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    background-color: rgb(255, 0, 0);
+}
+.button.bestbtn:hover{
+    color: white;
+    background-color: red;
+    border: 0;
+    box-shadow: 5px 5px 10px red;
+}
+.kotak-best:hover{
+    color: red;
+    border: 1px solid red;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+.kotak-best:hover img{
+    animation: anima 10s ease-out infinite;
+    transition: all ease-in-out 0.5s;
+}
+@keyframes anima {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.75);
+    }
+}
+
+.kotak-best img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+.kotak-best h3{
+    margin-bottom: 3%;
+    font-size: 1.8rem;
+    display: inline-block;
+}
+
+.kotak-best p{
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+}
+/* buat subs */
+.sect-sub{
+    color: white;
+    padding: 10%;
+    min-height: 40vh;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.824);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sect-sub h2{
+    font-size: 2rem;
+}
+.button.subs{
+    margin-left: 5%;
+    color: black;
+    background-color: white;
+}
+
+.floating{
+    position: absolute;
+    /* padding-top:5%; */
+    /* z-index: ; */
+    width: 100%;
+}
+.floating img{
+    width: 50px;
+    animation: zoom 10s ease-out infinite;
+    transition: all ease-in-out 0.5s;
+    margin: 5%;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* footer */
+.kakier{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.kakier h2{
+    display: inline-block;
+    font-size: 48px;
+    color: red;
+}
+.kakier p{
+    color: white;
+}
+
+footer h2 a{
+    text-decoration: none;
+    color: red;
+}
+
+footer h2 a:hover{
+    color: white;
+}
+
+#footer-logo{
+    margin: 0 3% 3% 3%;
+}
+
+.footer-icon{
+    text-align: center;
+    margin: 3% 0;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.footer-icon a{
+    margin:2%;
+    text-decoration: none;
+    color: white;
+}
+#facebook:hover{
+    color: rgb(0, 136, 255);
+}
+#twitter:hover{
+    color: rgb(0, 166, 255);
+}
+#instagram:hover{
+    background-image: linear-gradient(purple,red, yellow);
+    background-size: cover;
+}
+#youtube:hover{
+    color: red;
+}
+.footer-menu{
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.footer-box{
+    height: auto;
+    display: inline-block;
+    margin: 0 5%;
+}
+
+.footer-box h3{
+    font-size: 1.2rem;
+    color:white;
+    margin-bottom:3%;
+}
+
+.footer-menu ul{
+    text-align: left;
+    display: inline-block;
+    /* margin: 0 2%; */
+}
+
+.footer-menu li{
+    font-size: 0.9rem;
+    list-style-type: none;
+    color: gray;
+}
+
+.footer-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-menu ul li a:hover{
+    color: red;
+}
+
+@media(max-width: 800px){
+    .under-head{
+        /* position: relative; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:1% 3%;
+    }
+    .under-head li{
+        text-align: center; 
+    }
+    .under-head li:not(.disini) {
+        display: none;
+    }
+    .under-head a.buat-phone{
+        display: block;
+    }
+    .under-head.sidemenu{
+        /* min-height: 40vh; */
+        position: absolute;
+    }
+    .under-head.sidemenu ul li{
+        display: block;
+        margin: 25% 0;
+    }
+    .under-head.sidemenu li a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .under-head.sidemenu .buat-phone{
+        align-self: baseline;
+        float: none;
+        display: inline-block;
+        position: relative;
+    }
+    .welcome-text{
+        padding: 3%;
+    }
+    /* isi */
+    .yeji-vor h2{
+        font-size: 2.8rem;
+    }
+    .kotak-hitam{
+        width: 100%;
+        margin: 2% 0;
+    }
+    .best-seller{
+        height: fit-content;
+    }
+    .best-seller h2{
+        font-size: 2.8rem;
+    }
+    .for-best{
+        display:inline-block;
+        justify-content: center;
+        position: relative;
+        padding: 5%;
+    }
+    .kotak-best{
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .button.subs{
+        height: 50%;
+        align-self: center;
+    }
+    /* .for-best{
+        white-space: nowrap;
+        width: 200vw;
+        position: relative;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-left:10%;
+    }
+    .kotak-best{
+        position: relative;
+    }
+    .kotak-best h3{
+        white-space: normal;
+        font-size: 1.2rem;
+    }
+    .kotak-best p{
+        color: transparent;
+    } */
+
+}
+    

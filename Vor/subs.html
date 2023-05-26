@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORskin - Subscribe</title>
+    <link rel="stylesheet" href="cssfile/style.css">
+    <link rel="stylesheet" href="cssfile/subs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/fdc795101e.js" crossorigin="anonymous"></script>
+    <script src="jsfile/script.js" defer></script>
+
+</head>
+<body>
+    <section class = "header">
+        <div class="nav-bar">
+            <div id = "logo-vor">
+                <a href="home.html"><h1>VORskin</h1></a>
+            </div>
+        </div>
+        <nav class = "under-head" id="underhead">
+            <ul>
+                <li><a href="home.html" class="menu">Home</a></li>
+                <li><a href="aboutus.html" class="menu">About</a></li>
+                <li><a href="product.html" class="menu">Product</a></li>
+                <li><a href="promotion.html" class="menu">Promotion</a></li>
+                <li  class="disini"><a href="subs.html" class="menu  active">Subscribe</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="buat-phone" onclick="showMenu()"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </section>
+    <section class="background">
+        <div class="nav-bar">
+            <div id = "logo-vor">
+                <a href="home.html"><h1>VORskin</h1></a>
+            </div>
+        </div>
+        <nav class = "under-head" id="underhead">
+            <ul>
+                <li class="disini"><a href="home.html" class="menu active">Home</a></li>
+                <li><a href="aboutus.html" class="menu">About</a></li>
+                <li><a href="product.html" class="menu">Product</a></li>
+                <li><a href="promotion.html" class="menu">Promotion</a></li>
+                <li><a href="subs.html" class="menu">Subscribe</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="buat-phone"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </section>
+    <!-- This page provides a subscription form for the customers. Customer needs to submit some personal information, such as full name, email address, phone number, preferences (skin care, body care), and user must agree to receive newsletter. You are asked to create 5 kinds of form components and 5 kinds of validation. For validation, you must create it using JavaScript and don’t use regular expression. -->
+    <!-- nama, email ,phone, prefer(skincare, bodycare) -->
+    <!-- text nama email -->
+    <!-- number phone -->
+    <!-- password  -->
+    <!-- submit -->
+    <!-- radio gender -->
+    <!-- drop down preference -->
+    
+    <section class="subscribe">
+        <div class="container-sub">
+            <div class="subs-head">
+                <h1>Subscribe</h1>
+                <p>and Get 10% discount for your first purchase!</p>
+            </div>
+            <form class="form" id="form">
+                <div class="form-cond">
+                    <label for="">Full Name</label>
+                    <input type="text" placeholder="Full Name" id="fullname">
+                    <small>Error message</small>
+                </div>
+                <div class="form-cond">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="Email" id="email">
+                    <small>Error message</small>
+                </div>
+                <div class="form-cond">
+                    <label for="">Phone Number</label>
+                    <input type="number" placeholder="Phone Number" id="phone">
+                    <small>Error message</small>
+                </div>
+                <div class="form-cond">
+                    <label for="">Preferences</label>
+                    <select name="Preferences" id="preference">
+                        <option value="">-</option>
+                        <option value="body-care">Body Care</option>
+                        <option value="skin-care">Skin Care</option>
+                    </select>
+                    <small>Error message</small>
+                </div>
+                <div class="form-cond">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Password" id="pass1">
+                    <!-- <i class="fa-solid fa-eye"></i> -->
+                    <i class="fa-solid fa-eye-slash show-pass"></i><p id="para1">Show Password</p>
+                    <small>Error message</small>
+                </div>
+                <div class="form-cond">
+                    <label for="">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" id="pass2">
+                    <i class="fa-solid fa-eye-slash show-pass2"></i><p id="para2">Show Password</p>
+                    <small>Error message</small>
+                </div>
+                <!-- <div class="form-cond check">
+                    <input type="checkbox" name="" id="news">I agree to receive newsletter from VORskin
+                    <small>Error Message</small>
+                </div> -->
+                <div class="form-cond" id="check">
+                    <input type="checkbox" name="" id="news">
+                    <h5>I agree to receive newsletter from VORskin</h5> 
+                    <small>Error message</small> 
+                </div>
+                
+                
+                <input type="submit" value="Subscribe" class="sub-btn">
+            </form>
+        </div>
+        
+    </section>
+
+    <footer class="">
+        <div class = "kakier">
+            <div class="footer-icon">
+                <a href="https://www.facebook.com/" id="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/home" id="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" id="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" id="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class = "footer-menu">
+                <div id="footer-logo">
+                    <h2><a href="home.html">VORskin</a></h2>
+                    <p>All rights reserved</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Product</h3>
+                    <ul>
+                    <li><a href="product.html">Shop All</a></li>
+                    <li><a href="home.html#gobs">Best Seller</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
+                </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>VORskin</h3>
+                    <ul>
+                    <li><a href="aboutus.html">About VORskin</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="jsfile/subs.js"></script>
+</body>
+</html>

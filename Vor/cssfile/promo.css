@@ -1,0 +1,181 @@
+.promo{
+    background-image: linear-gradient(red,white);
+    text-align: center;
+    padding: 8%;
+}
+.promo h1{
+    font-size: 4rem;
+    color: white;
+}
+.promo-box{
+    width: 30%;
+    background-color: white;
+    padding: 2%;
+    margin: 0 1%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+.promo-box:hover{
+    border: 1px solid red;
+    box-shadow: 4px 4px black;
+}
+.promo-box h3{
+    font-size: 3rem;
+    color: red;
+}
+.promo-box ul{
+    margin: 5%;
+    text-align: left;
+}
+.promo-box ul li{
+    margin: 4%;
+    list-style-type: none;
+}
+.button.deals{
+    color: red;
+}
+.button.deals:hover{
+    background-color: rgb(0, 0, 0);
+    color: red;
+    box-shadow: 4px 4px black;
+}
+.for-partner{
+    min-height: 100vh;
+    background-color: white;
+    display: grid;
+    
+    text-align: center;
+}
+.for-partner h1{
+    font-size: 4rem;
+    margin: 2%;
+}
+.for-partner h2{
+    margin: 3%;
+    font-size: 2.8rem;
+}
+.grid-container{
+    display: grid;
+    gap: 2%;
+    justify-content: space-evenly;
+    grid-template-columns: 30% 30% 30%;
+    padding: 5%;
+}
+.grid-box{
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid red;
+    border-radius: 5px;
+    color: black;
+    /* display: grid; */
+    align-items: center;
+    margin-bottom: 4%;
+}
+.grid-box:hover{
+    color: red;
+    box-shadow: 4px 4px red;
+}
+.grid-box:hover img{
+    animation: upup 10s ease-in-out infinite;
+    transition: all ease 10s;
+}
+@keyframes upup {
+    0%,100%{
+        transform: translateX(0px) translateY(0);
+    }
+    50%{
+        transform: translateX(15px) translateY(15px);
+    }
+}
+.grid-box img{
+    width: 70%;
+}
+.grid-box h2{
+    margin: 4%;
+    font-size: 2rem;
+}
+.grid-box a{
+    font-size: 2rem;
+    color: red;
+    text-decoration: none;
+    margin: 3%;
+}
+#instagram:hover{
+    color:white;
+    padding: 2px;
+}
+
+
+
+
+
+.promo-itzy{
+    margin-top: 5%;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(white,black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promo-text{
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.button.subs{
+    box-shadow: 8px 8px red;
+    color: red;
+    transition: all ease 0.3s;
+}
+.button.subs:hover{
+    border: 0;
+    box-shadow: 8px 8px 10px white;
+    background-color: red;
+    color: white;
+}
+.promo-text h1{
+    font-size: 3.6rem;
+}
+.promo-text p{
+    font-size: 2rem;
+}
+.promo-text img{
+    margin: 10%;
+    width: 20%;
+}
+
+@media(max-width:800px){
+    .for-best{
+        margin-top: 10%;
+    }
+    .promo-box{
+        width: 100%;
+        margin: 3% 0;
+        padding-bottom: 5%;
+    }
+    .promo h1{
+        font-size: 3rem;
+    }
+    .promo h2{
+        font-size: 2.4rem;
+    }
+    .grid-container{
+        grid-template-columns: 75%;
+    }
+    .for-partner h1{
+        font-size: 3rem;
+    }
+    .for-partner h2{
+        font-size: 2.4rem;
+    }
+    .promo-itzy h1{
+        font-size: 2rem;
+    }
+    .promo-itzy p{
+        font-size: 1rem;
+    }
+}
